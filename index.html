@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAN NICOLAS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/verduras.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href='fonts/stylesheet.css' rel='stylesheet' type='text/css'>
+   <link href='fonts/ZCOOLQingKeHuangYou-Regular.ttf' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <section class="pb-5 mb-5">
+  <div class="flexbox-container content">
+    <div>
+  <h1><img src="img/logo.png"n alt="" width="33%"></h1>
+  <br>
+  <!-- <br><br><br> -->
+  <form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;">
+    <input class="form-control" id="myInput" type="text" name="verdura" placeholder="Buscador de verduras">
+    </div>
+   <br>
+   <br>
+   <div class="autocomplete" style="width:300px;">
+    <input id="inc" class="form-control " type="text" name="cantidad" placeholder="Cantidad"  >
+        </div>
+        
+    <input class="btn btn-light btn-sm" type="button"  onclick="incrementar()" value="+" > 
+    
+    <input class="btn btn-light btn-sm" type="button"  onclick="disminuir()" value="-" > 
+   <!--   <input type="button" onclick="decrementValue()" value="-" /> -->
+  
+   <!-- <input id="radioooo" type="radio" name="verdu" value="  kg" checked=""> KG
+  <input id="radiooo" type="radio" name="verdu" value="  unidades" > UNIDAD -->
+  <select >
+  <option id="sel1" value="   kg ">KG</option>
+   <option id="sel2" value="   gr ">GR</option>
+  <option id="sel3" value="  unid ">UNIDAD</option>
+</select>
+
+<br>
+<br>
+  <input type="button" class="btn btn-light" value="Agregar" onclick="CrearElementoLista()">
+  <img hidden src="img/blanco.png" alt="">
+ 
+</form>
+</div>
+
+
+<div class="pedidooo pedido">
+  <div id="ped">
+ <h2 id="hh">LISTADO DE FRUTAS/VERDURAS</h2>
+    <ul  id="lista"> 
+          
+    </ul>
+</div>
+    <input class="btn btn-light " type="button" value="Imprimir" onclick="printDiv('ped')">
+     <input class="btn btn-light " type="button" value="Limpiar lista" onclick="BorrarUl()">
+
+   
+
+    </div>
+
+</div>
+</section>
+
+
+<footer class=" pt-5 mt-5">
+   <!--  <div class=" foot">
+      <div class="small text-center ">Creado por <a href=""> Isurus Dev</a> </div>
+    </div> -->
+
+    <div class="text-center foot ">  Desarrolado por
+    <a href="https://Isurusdev.com.ar"><img class="link" src="img/logo3.png" alt=""> </a> 
+  </div>
+  </footer>
+
+
+
+
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/verduras.js"></script>
+
+</script>
+</body>
+</html>
